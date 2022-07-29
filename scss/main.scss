@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.5rem;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// variables ------------------------
+
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Orange: hsl(25, 97%, 53%);
+
+//------------------------------------------
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1.8rem);
+    width: 100%;
+    background-color: $Very-Dark-Blue;
+
+    .container {
+        background: linear-gradient(0deg, rgb(23, 30, 40) 0%, rgb(35, 42, 52) 100%);
+        min-height: 44rem;
+        max-width: 44rem;
+        width: 100%;
+        padding: 4rem;
+        border-radius: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        &.active {
+            display: flex;
+        }
+
+        .star {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 2.25rem;
+            background: #262f38;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4rem;
+            img {
+                
+                background: #262f38;
+        
+            }
+        }
+
+        h1 {
+            color: $White;
+            font-size: 2.6rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        p {
+            color: $Light-Grey;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .rating-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            li {
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 5rem;
+                    width: 5rem;
+                    border-radius: 2.5rem;
+                    color: $Light-Grey;
+                    font-weight: 700;
+                    background-color: $Dark-Blue;
+                    filter: contrast(91%);
+                    transition: all 0.5s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $Orange;
+                        color: $White;
+                    }
+                    &.btn-active {
+                        background-color: $Light-Grey;
+                        color: $White;
+                    }
+                }
+            }
+        }
+
+        .submit {
+            line-height: 4rem;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+            background-color: $Orange;
+            color: $White;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $White;
+                color: $Orange;
+            }
+        }
+    }
+
+    .modal {
+        background: linear-gradient(0deg, rgb(23, 30, 40) 0%, rgb(35, 42, 52) 100%);
+        min-height: 44rem;
+        max-width: 44rem;
+        width: 100%;
+        padding: 4rem;
+        border-radius: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+        &.active     {
+            display: flex;
+        }
+
+        img {
+            margin-bottom: 4rem;
+        }
+
+        .show-rating {
+            background-color: #262f38;
+            color: $Orange;
+            line-height: 3rem;
+            border-radius: 2rem;
+            width: 54%;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            color: $White;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: $Light-Grey;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            width: 94%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            margin: 1.5rem;
+
+            p {
+                width: 26rem;
+                font-size: 1.3rem;
+            }
+            .rating-btn{
+                li {
+                    a {
+                        line-height: 4rem;
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+
+        .modal {
+            margin: 1.5rem;
+
+            .show-rating {
+                width: 70%;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+footer {
+    background: $Very-Dark-Blue;
+    color: $White;
+}
+
+
+

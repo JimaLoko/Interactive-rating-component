@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  list-style: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1.8rem);
+  width: 100%;
+  background-color: hsl(216deg, 12%, 8%);
+}
+.main .container {
+  background: linear-gradient(0deg, rgb(23, 30, 40) 0%, rgb(35, 42, 52) 100%);
+  min-height: 44rem;
+  max-width: 44rem;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.main .container.active {
+  display: flex;
+}
+.main .container .star {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  background: #262f38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.main .container .star img {
+  background: #262f38;
+}
+.main .container h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.main .container p {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.main .container .rating-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main .container .rating-btn li a {
+  display: inline-block;
+  text-align: center;
+  line-height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 700;
+  background-color: hsl(213deg, 19%, 18%);
+  filter: contrast(91%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.main .container .rating-btn li a:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.main .container .rating-btn li a.btn-active {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.main .container .submit {
+  line-height: 4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.main .container .submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.main .modal {
+  background: linear-gradient(0deg, rgb(23, 30, 40) 0%, rgb(35, 42, 52) 100%);
+  min-height: 44rem;
+  max-width: 44rem;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+.main .modal.active {
+  display: flex;
+}
+.main .modal img {
+  margin-bottom: 4rem;
+}
+.main .modal .show-rating {
+  background-color: #262f38;
+  color: hsl(25deg, 97%, 53%);
+  line-height: 3rem;
+  border-radius: 2rem;
+  width: 54%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-weight: 400;
+}
+.main .modal h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.main .modal p {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  width: 94%;
+}
+@media (max-width: 600px) {
+  .main .container {
+    margin: 1.5rem;
+  }
+  .main .container p {
+    width: 26rem;
+    font-size: 1.3rem;
+  }
+  .main .container .rating-btn li a {
+    line-height: 4rem;
+    width: 4rem;
+  }
+  .main .modal {
+    margin: 1.5rem;
+  }
+  .main .modal .show-rating {
+    width: 70%;
+  }
+  .main .modal p {
+    font-size: 1.3rem;
+  }
+}
+
+footer {
+  background: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=main.css.map */
