@@ -46,6 +46,9 @@ Desktop thank-you state
 
 ### Links
 
+- Solution URL: [Interactive rating component](https://www.frontendmentor.io/solutions/interactive-rating-component-HzJe7H_Wf7)
+- Live Site URL: [GitHub Pages](https://jimaloko.github.io/Interactive-rating-component/)
+
 ## My process
 
 ### Built with
